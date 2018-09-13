@@ -3,10 +3,12 @@ package pl.groo.domain;
 import java.util.Arrays;
 
 public enum Subject {
-    PSZYRA("przyroda"),
-    MAJCA("matematyka"),
+    MATH("Math"),
+    POLISH("Polish"),
+    ENGLISH("English"),
     JAVA("Java"),
     PYTHON("Python"),
+    JAVA_SCRIPT("JavaScript"),
     GEOGRAPHY("Geography");
 
     private final String subjectName;

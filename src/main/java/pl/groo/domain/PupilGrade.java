@@ -1,9 +1,16 @@
 package pl.groo.domain;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "PUPIL_GRADES")
 public class PupilGrade {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    long id;
+    long PupilId;
     private final Subject subject;
     private List<Grade> gradeList = new ArrayList<>();
 
@@ -20,6 +27,14 @@ public class PupilGrade {
         return subject;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public long getPupilId() {
+        return PupilId;
+    }
+
     public List<Grade> getGradeList() {
         return gradeList;
     }
@@ -27,7 +42,9 @@ public class PupilGrade {
     @Override
     public String toString() {
         return "PupilGrade{" +
-                "subject=" + subject +
+                "id=" + id +
+                ", PupilId=" + PupilId +
+                ", subject=" + subject +
                 ", gradeList=" + gradeList +
                 '}';
     }

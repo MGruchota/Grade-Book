@@ -2,12 +2,17 @@ package pl.groo.domain;
 import pl.groo.exception.PupilNotEnrolledOnSubject;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.*;
 import java.util.stream.Collectors;
 
 
 @Entity
 public class Pupil {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     String name;
     String surname;
@@ -71,6 +76,14 @@ public class Pupil {
 
     public String getSurname() {
         return surname;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public List<PupilGrade> getPupilGrades() {
+        return pupilGrades;
     }
 
     @Override
