@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="resources" uuid="c8e7fa5f-452e-48dc-92b1-f60553bb4c5a">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:D:\repo\Grade-Book\src\main\resources</jdbc-url>
+    </data-source>
+  </component>
+</project>

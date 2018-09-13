@@ -21,4 +21,9 @@ public class GradeBookController {
         return "logged";
     }
 
+    @RequestMapping("pupillist")
+    String pupillist(){
+        return "pupillist";
+    }
+
 }
